@@ -48,6 +48,20 @@ Board was designed with [Easy EDA](https://easyeda.com/)
 
 ### Building
 
+Order the PCB from your favorite PCB Manufacture. Cost of boards will be about $27 for 5
+
+Popular Choices: 
+- [OshPark](https://oshpark.com/)
+- [JLCPCB](https://jlcpcb.com/)
+- [PCBWay](https://www.pcbway.com/)
+
+
+The board can be built with either surface mount or through hole components (but not both). 
+
+For the micro USB ports, you can solder the ports directly (if you are skilled), or you can use [these through hole kits](https://www.amazon.com/gp/product/B07KS1RPMP/ref=ewc_pr_img_2?smid=AB5D7200EYCEL&psc=1)
+
+![](https://m.media-amazon.com/images/I/512k+5LeVmL._AC_SX679_.jpg)
+
 
 ## Configuration
 
