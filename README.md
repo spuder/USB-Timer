@@ -45,6 +45,8 @@ See [./BOM](./BOM) for full Bill of Materials
 
 Board was designed with [Easy EDA](https://easyeda.com/)
 
+View project on [OSHWLab.com/owenspencer/USB-Timer](https://oshwlab.com/owenspencer/USB-Timer)
+
 ![](https://i.imgur.com/y102LIr.png)
 
 ![](https://i.imgur.com/PML6dVw.png)
