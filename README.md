@@ -38,7 +38,10 @@ See [./BOM](./BOM) for full Bill of Materials
 
 ### Schematic
 
-![](https://imgur.com/ooBuj1o.jpg)
+![](https://imgur.com/SQVByrA.png)
+
+![](https://imgur.com/uFK5M6v.png)
+
 
 Board was designed with [Easy EDA](https://easyeda.com/)
 
