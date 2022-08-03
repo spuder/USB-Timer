@@ -8,6 +8,12 @@ void setup() {
   pinMode(D7, OUTPUT); //USB 2
   pinMode(D8, OUTPUT); //USB 1
 
+  digitalWrite(LED_BUILTIN, HIGH); //Turn off
+  digitalWrite(D5, HIGH); //Turn off
+  digitalWrite(D6, HIGH); //Turn off
+  digitalWrite(D7, HIGH); //Turn off
+  digitalWrite(D8, HIGH); //Turn off
+
 }
 
 // the loop function runs over and over again forever
