@@ -68,6 +68,13 @@ For the micro USB ports, you can solder the ports directly (if you are skilled),
 ![](https://m.media-amazon.com/images/I/512k+5LeVmL._AC_SX679_.jpg)
 
 
+
+Once the board is built, see the [arduino/blink/README.md](arduino/blink/README.md]) for a sketch to blink the leds
+
+
+[Setup D1 Mini with arduino](https://www.instructables.com/Programming-the-WeMos-Using-Arduino-SoftwareIDE/)  
+
+
 ## Configuration
 
 The USB-Timer shipps with a wifi network that can be programmed using your cell phone
@@ -79,13 +86,14 @@ If you prefer you can directly upload your own code using Arduino.
 
 
 Code examples located in the arduino folder
-- [./arduino](./arduino)
+
+- [./arduino](./arduino)  
+- [arduino/blink/README.md](arduino/blink/README.md])  
+- [arduino/wifi_manager/README.md](arduino/wifi_manager/README.md])  
 
 ### Config[ESPHome]
 
 The USB-Timer is based on a Wemos D1 Mini (ESP8266) which can easily be programemd with ESPHome / HomeAssistant
-
-
 
 
 ## Resources
