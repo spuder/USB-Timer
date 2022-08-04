@@ -1,0 +1,4 @@
+- [ ] Allow powering from single USB port (no data mode)
+- [ ] Solder bridge pads between usb pin 4 and pin 5 to support 4 pin connections
+- [ ] USB C support
+- [ ] Surface mount reistors on bottom

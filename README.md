@@ -40,7 +40,7 @@ See [./BOM](./BOM) for full Bill of Materials
 
 ![](https://imgur.com/SQVByrA.png)
 
-![](https://imgur.com/uFK5M6v.png)
+![](https://imgur.com/ZkSwsCX.png)
 
 
 Board was designed with [Easy EDA](https://easyeda.com/)
