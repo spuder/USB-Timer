@@ -68,8 +68,7 @@ For the micro USB ports, you can solder the ports directly (if you are skilled),
 ![](https://m.media-amazon.com/images/I/512k+5LeVmL._AC_SX679_.jpg)
 
 
-
-Once the board is built, see the [arduino/blink/README.md](arduino/blink/README.md]) for a sketch to blink the leds
+Once the board is built, see the [arduino/blink/README.md](arduino/blink/README.md]) for a sketch to blink the leds. Or get started with ESPHome configuration. 
 
 
 [Setup D1 Mini with arduino](https://www.instructables.com/Programming-the-WeMos-Using-Arduino-SoftwareIDE/)  
@@ -77,10 +76,18 @@ Once the board is built, see the [arduino/blink/README.md](arduino/blink/README.
 
 ## Configuration
 
-The USB-Timer shipps with a wifi network that can be programmed using your cell phone
+Configuration can be done in one of several ways
 
-### Config[Wifi]
-If you prefer you can directly upload your own code using Arduino. 
+1. ESPHome / ESPHome + Home Assistant (recomended)
+2. Arudino programming (advanced)
+3. Mobile app (advanced/ work in progress)
+
+### Config[ESPHome]
+
+See [./esphome](./esphome/) directory for example configurations
+
+- esphome/home-assistant.yaml (recomended for home assistant users)
+- esphome/stand-alone.yaml (recomended for users familiar with esphome and not using home assistant)
 
 ### Config[Arduino]
 
@@ -90,10 +97,6 @@ Code examples located in the arduino folder
 - [./arduino](./arduino)  
 - [arduino/blink/README.md](arduino/blink/README.md])  
 - [arduino/wifi_manager/README.md](arduino/wifi_manager/README.md])  
-
-### Config[ESPHome]
-
-The USB-Timer is based on a Wemos D1 Mini (ESP8266) which can easily be programemd with ESPHome / HomeAssistant
 
 
 ## Resources

@@ -1,0 +1,57 @@
+esp8266:
+  board: d1_mini
+
+switch:
+  - platform: gpio
+    pin: D8
+    name: "USB 1"
+    id: "usb_1"
+  - platform: gpio
+    pin: D7
+    name: "USB 2"
+    id: "usb_2"
+  - platform: gpio
+    pin: D6
+    name: "USB 3"
+    id: "usb_3"
+  - platform: gpio
+    pin: D5
+    name: "USB 4"
+    id: "usb_4"
+  
+light: 
+  - platform: status_led
+    name: "USB-Timer State"
+    pin: 
+      number: D4
+      inverted: true
+
+# The time section will setup the USB-Timer to be completely stand alone mode.
+# It will turn on/off the usb ports at the configured times
+# See home-assistant.yaml for example configuration that leverages home assistant 'automations' and 'scenes' for additional automation
+
+time: 
+  # sntp defaults to pool.ntp.org. See home-assistant.yaml for example to pull time from homeassistant instead
+  - platform: sntp
+    # ESPHome will try to automatically infer the timezone based on the computer that is running esphome
+    # https://esphome.io/components/time.html#home-assistant-time-source
+    # timezone: America/Denver 
+    on_time:
+      - seconds: 0
+        minutes: 0
+        hours: 8
+        days_of_week: MON-FRI
+        then:
+          - switch.turn_on: usb_1
+          - switch.turn_on: usb_2
+          - switch.turn_on: usb_3
+          - switch.turn_on: usb_4
+      - seconds: 0
+        minutes: 0
+        hours: 17
+        days_of_week: MON-FRI
+        then:
+          - switch.turn_off: usb_1
+          - switch.turn_off: usb_2
+          - switch.turn_off: usb_3
+          - switch.turn_off: usb_4
