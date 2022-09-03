@@ -1,6 +1,11 @@
 esp8266:
   board: d1_mini
 
+# USB Ports are connected to GPIO pins through Logic Level Mosfets
+# D8 = USB 1
+# D7 = USB 2
+# D6 = USB 3
+# D5 = USB 4
 switch:
   - platform: gpio
     pin: D8
@@ -19,6 +24,9 @@ switch:
     name: "USB 4"
     id: "usb_4"
   
+# Status LED light is on Pin D4
+# Pin D4 is shared with the wifi reset button on the USB-Timer PCB
+# You can choose to use status_led or wifi reset but not both
 light: 
   - platform: status_led
     name: "USB-Timer State"
@@ -55,3 +63,51 @@ time:
           - switch.turn_off: usb_2
           - switch.turn_off: usb_3
           - switch.turn_off: usb_4
+
+# Optional momentary push buttons to toggle the USB ports on and off
+# D0 = USB 1 Button
+# D1 = USB 2 Button
+# D2 = USB 3 Button
+# D3 = USB 4 Button
+# If you wish to use on/off buttons instead of momentary buttons, change switch.toggle to switch.turn_on
+binary_sensor:
+  - platform: gpio
+    pin: 
+      number: D0
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "usb_1_button"
+    id: "usb_1_button"
+    on_press:
+      then:
+        - switch.toggle: usb_1
+  - platform: gpio
+    pin: 
+      number: D1
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "usb_2_button"
+    id: "usb_2_button"
+    on_press:
+      then:
+        - switch.toggle: usb_2
+  - platform: gpio
+    pin: 
+      number: D2
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "usb_3_button"
+    id: "usb_3_button"
+    on_press:
+      then:
+        - switch.toggle: usb_3
+  - platform: gpio
+    pin: 
+      number: D3
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "usb_4_button"
+    id: "usb_4_button"
+    on_press:
+      then:
+        - switch.toggle: usb_4
