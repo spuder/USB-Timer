@@ -104,6 +104,13 @@ Code examples located in the arduino folder
 - [arduino/wifi_manager/README.md](arduino/wifi_manager/README.md])  
 
 
+
+## Case
+
+STL files for a 3d printable case are located in the [CAD](./CAD/) folder
+
+![](https://media.giphy.com/media/WjviqmvAURGXarPrWy/giphy.gif)
+
 ## Resources
 
 - Add USB C to your usb 2.0 projects https://idyl.io/how-to-add-usb-type-c-micro-usb-replacement/

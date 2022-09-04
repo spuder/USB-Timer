@@ -19,3 +19,10 @@ The bottom has cutouts for 8mm rubber feet
 ![](https://imgur.com/ZBW0tzn.png)
 
 [Amazon - Rubber Feet](https://www.amazon.com/gp/product/B07G86DL1L/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
+
+
+## Assembly
+
+Use 2 (optional) m3 screws to hold the lid in place.
+
+![](https://media.giphy.com/media/WjviqmvAURGXarPrWy/giphy.gif)
