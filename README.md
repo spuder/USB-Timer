@@ -42,7 +42,7 @@ See [./BOM](./BOM) for full Bill of Materials
 
 ### Schematic
 
-![](https://imgur.com/elpmFPQ.png)
+![](https://imgur.com/FSzB65R.png)
 
 ![](https://imgur.com/ZkSwsCX.png)
 
