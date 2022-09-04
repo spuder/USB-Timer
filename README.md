@@ -37,6 +37,7 @@ Use either through hole _or_ SMD mosfet, not both!
 | **Buttons (optional)** | Website | Count | 
 | --- | --- | --- |
 | [8mm metal buttons](https://www.aliexpress.com/item/3256801677651364.html?spm=a2g0o.productlist.0.0.169c62f1N2n2FT&algo_pvid=c18aeb60-fc17-4477-b9e9-b930d34a5b91&algo_exp_id=c18aeb60-fc17-4477-b9e9-b930d34a5b91-5&pdp_ext_f=%7B%22sku_id%22%3A%2212000017904710697%22%7D&pdp_npi=2%40dis%21USD%210.91%210.68%21%21%21%21%21%402101d8b516622380113308192e6a4d%2112000017904710697%21sea&curPageLogUid=412udmnHGEBC) | Aliexpress | 4
+| [Rubber Feet](https://www.amazon.com/gp/product/B07G86DL1L/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) | Amazon | 100| 
 
 See [./BOM](./BOM) for full Bill of Materials
 
