@@ -100,7 +100,7 @@ substitutions:
   name: "usb-timer1" #<- Change this to whatever name you want
 
 dashboard_import:
-  package_import_url: github://spuder/usb-timer/esphome/common.yaml@v1
+  package_import_url: github://spuder/usb-timer/esphome/common.yaml@main
 ```
 
 ### Config[Arduino]

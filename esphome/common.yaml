@@ -22,7 +22,7 @@ packages:
   usb-timer: github://spuder/usb-timer/esphome/lib/hardware.yaml
 
 dashboard_import:
-  package_import_url: github://spuder/usb-timer/esphome/common.yaml@v1
+  package_import_url: github://spuder/usb-timer/esphome/common.yaml@main
 
 wifi:
   ap:
