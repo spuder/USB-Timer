@@ -1,0 +1,32 @@
+# This is 
+
+substitutions:
+  name: "usb-timer1"
+  timezone: "autodiscover" #TODO: implement this substitution
+
+esphome:
+  name: "${name}"
+  platform: ESP8266
+  board: d1_mini
+  project:
+    name: spuder.usb-timer
+    version: "1.0"
+
+logger:
+
+api:
+
+ota:
+
+packages:
+  usb-timer: github://spuder/usb-timer/esphome/lib/hardware.yaml
+
+dashboard_input:
+  package_import_url: github://spuder/usb-timer/esphome/common.yaml@v1
+
+wifi:
+  ap:
+    ssid: "Usb-Timer Fallback Hotspot"
+    password: "12345678"
+
+captive_portal:

@@ -1,3 +1,6 @@
+# hardware.yaml contains configuration that is common across all implementations of usb-timer
+# These are the values that likely will never change
+# See common.yaml for values to be modified
 esp8266:
   board: d1_mini
 
@@ -23,73 +26,26 @@ switch:
     pin: D5
     name: "USB 4"
     id: "usb_4"
-
-
-# The time section will setup the USB-Timer to be completely stand alone mode.
-# It will turn on/off the usb ports at the configured times
-# See home-assistant.yaml for example configuration that leverages home assistant 'automations' and 'scenes' for additional automation
-
-time: 
-  # sntp defaults to pool.ntp.org. See home-assistant.yaml for example to pull time from homeassistant instead
-  - platform: sntp
-    # ESPHome will try to automatically infer the timezone based on the computer that is running esphome
-    # https://esphome.io/components/time.html#home-assistant-time-source
-    # timezone: America/Denver x
-    on_time:
-      - seconds: 0
-        minutes: 0
-        hours: 8
-        days_of_week: MON-FRI
-        then:
-          - switch.turn_on: usb_1
-          - switch.turn_on: usb_2
-          - switch.turn_on: usb_3
-          - switch.turn_on: usb_4
-      - seconds: 0
-        minutes: 0
-        hours: 17
-        days_of_week: MON-FRI
-        then:
-          - switch.turn_off: usb_1
-          - switch.turn_off: usb_2
-          - switch.turn_off: usb_3
-          - switch.turn_off: usb_4
-
   
-# USB Ports are connected to GPIO pins through Logic Level Mosfets
-# D8 = USB 1
-# D7 = USB 2
-# D6 = USB 3
-# D5 = USB 4
-switch:
-  - platform: gpio
-    pin: D8
-    name: "USB 1"
-    id: "usb_1"
-  - platform: gpio
-    pin: D7
-    name: "USB 2"
-    id: "usb_2"
-  - platform: gpio
-    pin: D6
-    name: "USB 3"
-    id: "usb_3"
-  - platform: gpio
-    pin: D5
-    name: "USB 4"
-    id: "usb_4"
-
+# Status LED light is on Pin D4
+# Pin D4 is shared with the wifi reset button on the USB-Timer PCB
+# You can choose to use status_led or wifi reset but not both
+light: 
+  - platform: status_led
+    name: "USB-Timer State"
+    pin: 
+      number: D4
+      inverted: true
 
 # The time section will setup the USB-Timer to be completely stand alone mode.
 # It will turn on/off the usb ports at the configured times
 # See home-assistant.yaml for example configuration that leverages home assistant 'automations' and 'scenes' for additional automation
-
 time: 
   # sntp defaults to pool.ntp.org. See home-assistant.yaml for example to pull time from homeassistant instead
   - platform: sntp
     # ESPHome will try to automatically infer the timezone based on the computer that is running esphome
     # https://esphome.io/components/time.html#home-assistant-time-source
-    # timezone: America/Denver x
+    # timezone: America/Denver 
     on_time:
       - seconds: 0
         minutes: 0
@@ -124,6 +80,8 @@ binary_sensor:
       inverted: True
     name: "usb_1_button"
     id: "usb_1_button"
+    filters:
+      - delayed_on: 10ms
     on_press:
       then:
         - switch.toggle: usb_1
@@ -134,6 +92,8 @@ binary_sensor:
       inverted: True
     name: "usb_2_button"
     id: "usb_2_button"
+    filters:
+      - delayed_on: 10ms
     on_press:
       then:
         - switch.toggle: usb_2
@@ -144,6 +104,8 @@ binary_sensor:
       inverted: True
     name: "usb_3_button"
     id: "usb_3_button"
+    filters:
+      - delayed_on: 10ms
     on_press:
       then:
         - switch.toggle: usb_3
@@ -154,6 +116,8 @@ binary_sensor:
       inverted: True
     name: "usb_4_button"
     id: "usb_4_button"
+    filters:
+      - delayed_on: 10ms
     on_press:
       then:
         - switch.toggle: usb_4

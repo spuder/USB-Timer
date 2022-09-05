@@ -91,8 +91,17 @@ Configuration can be done in one of several ways
 
 See [./esphome](./esphome/) directory for example configurations
 
-- esphome/home-assistant.yaml (recomended for home assistant users)
-- esphome/stand-alone.yaml (recomended for users familiar with esphome and not using home assistant)
+Most of the configuraiton is abstracted away. 
+
+Just add an 'include' into your esphome config that references this git repo and esphome should set everything up automatically. 
+
+```yaml
+substitutions:
+  name: "usb-timer1" #<- Change this to whatever name you want
+
+dashboard_input:
+  package_import_url: github://spuder/usb-timer/esphome/common.yaml@v1
+```
 
 ### Config[Arduino]
 
