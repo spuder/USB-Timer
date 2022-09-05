@@ -109,9 +109,10 @@ binary_sensor:
     on_press:
       then:
         - switch.toggle: usb_3
+  # Pin 0 is an internal PullDown only
   - platform: gpio
     pin: 
-      number: D4
+      number: D0
       mode: INPUT_PULLUP
       inverted: True
     name: "usb_4_button"
