@@ -2,6 +2,9 @@
 
 Control 4 USB ports with a microcontroller
 
+![](https://imgur.com/A2CsYek.png)
+![](https://imgur.com/tp0hgIG.png)
+
 ![](https://i.imgur.com/fN3Y8YD.png)
 
 
@@ -43,7 +46,7 @@ See [./BOM](./BOM) for full Bill of Materials
 
 ### Schematic
 
-![](https://imgur.com/FSzB65R.png)
+![](https://imgur.com/e69g4XU.png)
 
 ![](https://imgur.com/ZkSwsCX.png)
 
@@ -72,6 +75,20 @@ For the micro USB ports, you can solder the ports directly (if you are skilled),
 
 ![](https://m.media-amazon.com/images/I/512k+5LeVmL._AC_SX679_.jpg)
 
+
+### PinOut
+
+```sh
+USB 1 => D8 
+USB 2 => D7
+USB 3 => D6
+USB 4 => D5
+Button 1 => D1 and GND (PullUp)
+Button 2 => D2 and GND (PullUp)
+Button 3 => D3 and GND (PullUp)
+Button 4 => D0 and 3.3v (PullDown)
+```
+![](https://imgur.com/kfg2NW0.png)
 
 Once the board is built, see the [arduino/blink/README.md](arduino/blink/README.md]) for a sketch to blink the leds. Or get started with ESPHome configuration. 
 
