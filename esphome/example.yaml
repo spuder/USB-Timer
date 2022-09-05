@@ -7,5 +7,5 @@
 substitutions:
   name: "usb-timer1"
 
-dashboard_input:
+dashboard_import:
   package_import_url: github://spuder/usb-timer/esphome/common.yaml@v1

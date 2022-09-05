@@ -99,7 +99,7 @@ Just add an 'include' into your esphome config that references this git repo and
 substitutions:
   name: "usb-timer1" #<- Change this to whatever name you want
 
-dashboard_input:
+dashboard_import:
   package_import_url: github://spuder/usb-timer/esphome/common.yaml@v1
 ```
 
