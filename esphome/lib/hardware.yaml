@@ -114,7 +114,7 @@ binary_sensor:
     pin: 
       number: D0
       mode: INPUT_PULLUP
-      inverted: True
+      inverted: False
     name: "usb_4_button"
     id: "usb_4_button"
     filters:
