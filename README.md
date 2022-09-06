@@ -114,7 +114,7 @@ Configuration can be done in one of several ways
 
 See [./Firmware/esphome](./Firmware/esphome/) directory for example configurations
 
-Most of the configuraiton is abstracted away. 
+Most of the configuration is abstracted away so you don't need to worry about it. 
 
 Just add an 'include' into your esphome config that references this git repo and esphome should set everything up automatically. 
 
@@ -122,6 +122,23 @@ Just add an 'include' into your esphome config that references this git repo and
 dashboard_import:
   package_import_url: github://spuder/usb-timer/esphome/common.yaml@main
 ```
+
+If you aren't using home assistant and want to manually compile and upload, a makefile is provided
+
+```bash
+make clean
+make build
+```
+
+This will generate 2 firmware files in the root directory
+
+```bash
+firmware.bin
+firmware.elf
+```
+
+Use a tool like [esphome/esphome-flasher](https://github.com/esphome/esphome-flasher) to upload the .bin to the wemos d1 mini
+
 
 ### Config[Firmware/arduino]
 
