@@ -8,7 +8,7 @@ Control 4 USB ports with a microcontroller
 ![](https://i.imgur.com/fN3Y8YD.png)
 
 
-Buy your own: 
+Buy your own:   
 <a href="https://www.tindie.com/stores/spuder/?ref=offsite_badges&utm_source=sellers_spuder&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
 ## Hardware
 
