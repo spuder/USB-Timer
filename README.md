@@ -120,7 +120,7 @@ See [./Firmware/esphome](./Firmware/esphome/) directory for example configuratio
 
 Most of the configuration is abstracted away so you don't need to worry about it. 
 
-Some versions of home assistant default to the wrong model of esp8266. If you get errors try commenting/deleting these lines from the home assistant stock config. `esp01_1m` will be overwritten with `d1_mini` 
+Some versions of home assistant default to the wrong model of esp8266. If you get errors, try commenting/deleting these lines. (or rename `esp01_1m` to  `d1_mini` )
 
 ```bash
 #esp8266:
