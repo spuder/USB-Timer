@@ -8,4 +8,4 @@
 #   name: "usb-timer1"
 
 dashboard_import:
-  package_import_url: github://spuder/usb-timer/Firmware/esphome/common.yaml@main
+  package_import_url: github://spuder/USB-Timer/Firmware/esphome/common.yaml@main
