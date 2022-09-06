@@ -4,9 +4,20 @@
 # To get started with ESP home, just add the following lines to your esphome config
 # If using home-assistant+esphome, append the following lines to the bottom of the config
 
+substitutions:
+  name: "usb-timer1"
+
+esphome:
+  name: "${name}"
+  project:
+    name: spuder.usb-timer
+    version: "1.0"
+
+esp8266:
+  board: d1_mini
 
 packages:
   usb-timer: github://spuder/USB-Timer/Firmware/esphome/packages/hardware.yaml
 
 dashboard_import:
-  package_import_url: github://spuder/USB-Timer/Firmware/esphome/common.yaml@main
+  package_import_url: github://spuder/USB-Timer/Firmware/esphome/home-assistant.yaml@main

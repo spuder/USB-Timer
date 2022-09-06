@@ -130,6 +130,8 @@ Some versions of home assistant default to the wrong model of esp8266. If you ge
 Just add an 'include' into your esphome config that references this git repo and esphome should set everything up automatically including your timezone.
 
 ```yaml
+packages:
+  usb-timer: github://spuder/USB-Timer/Firmware/esphome/packages/hardware.yaml
 dashboard_import:
   package_import_url: github://spuder/usb-timer/esphome/common.yaml@main
 ```
