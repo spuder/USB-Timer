@@ -113,7 +113,7 @@ binary_sensor:
   - platform: gpio
     pin: 
       number: D0
-      mode: INPUT_PULLUP
+      mode: INPUT_PULLDOWN
       inverted: False
     name: "usb_4_button"
     id: "usb_4_button"
