@@ -5,6 +5,7 @@ Control 4 USB ports with a microcontroller
 ![](https://imgur.com/A2CsYek.png)
 ![](https://imgur.com/ROunWd5.png)
 
+![](https://imgur.com/yNPN8Ie.png)
 ![](https://i.imgur.com/fN3Y8YD.png)
 ![](https://imgur.com/tp0hgIG.png)
 

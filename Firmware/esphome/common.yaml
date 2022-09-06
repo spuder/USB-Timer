@@ -19,10 +19,10 @@ api:
 ota:
 
 packages:
-  usb-timer: github://spuder/usb-timer/esphome/lib/hardware.yaml
+  usb-timer: github://spuder/USB-Timer/Firmware/esphome/lib/hardware.yaml
 
 dashboard_import:
-  package_import_url: github://spuder/usb-timer/esphome/common.yaml@main
+  package_import_url: github://spuder/USB-Timer/Firmware/esphome/common.yaml@main
 
 wifi:
   ap:
