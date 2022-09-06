@@ -1,0 +1,5 @@
+# If using home assistant + esphome plugin, 
+# add the following to the bottom of the config file in the HA gui
+
+dashboard_import:
+  package_import_url: github://spuder/USB-Timer/Firmware/esphome/common.yaml@main

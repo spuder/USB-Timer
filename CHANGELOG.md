@@ -7,7 +7,9 @@
 - Add visual indicators for screw holes
 - Labeled Wifi Reset Button
 - Added blink and wifi_manager examples
-
+- Added esphome examples
+- Add 3d printable Case
+- Initial Release on Tindie.com
 # v0.1
 
 Initial release

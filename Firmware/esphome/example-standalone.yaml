@@ -1,6 +1,6 @@
 # This is an example esphome configuration
 # Most of the yaml is abstracted away as a library (A.K.A. esphome 'package') 
-# located in lib/hardware.yaml 
+# located in packages/hardware.yaml 
 # To get started with ESP home, just add the following lines to your esphome config
 # If using home-assistant+esphome, append the following lines to the bottom of the config
 

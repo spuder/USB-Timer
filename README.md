@@ -112,18 +112,30 @@ Configuration can be done in one of several ways
 
 ### Config[ESPHome]
 
+#### Home Assistant
+
+Setting up with HomeAssistant is easy, just install the esphome extension, then click 'add device'. 
+
 See [./Firmware/esphome](./Firmware/esphome/) directory for example configurations
 
 Most of the configuration is abstracted away so you don't need to worry about it. 
 
-Just add an 'include' into your esphome config that references this git repo and esphome should set everything up automatically. 
+Just add an 'include' into your esphome config that references this git repo and esphome should set everything up automatically including your timezone.
 
 ```yaml
 dashboard_import:
   package_import_url: github://spuder/usb-timer/esphome/common.yaml@main
 ```
 
-If you aren't using home assistant and want to manually compile and upload, a makefile is provided
+Copy the api key from the HA gui and then go to 'Settings' -> 'Integrations' and you should see a new device named usb-timer1 (or whatever you named it). Paste in your api key and everything should work. 
+
+---
+
+#### ESPHome Stand Alone (non home assistant)
+
+A `Makefile` is provided that will generate `firmware.bin` file which you can manually upload to your USB-Timer. 
+
+Make sure you have `esphome` installed. OSX Users with homebrew can run `brew install esphome`. 
 
 ```bash
 make clean
@@ -138,6 +150,12 @@ firmware.elf
 ```
 
 Use a tool like [esphome/esphome-flasher](https://github.com/esphome/esphome-flasher) to upload the .bin to the wemos d1 mini
+
+If you didn't specify a wireless network, the wemos will boot up into AP mode. Join the network named 'USB-Timer Fallback Hotspot' with password `12345678`. 
+
+A captive portal will popup which will allow you to reconfigure the device to your wifi network. 
+
+![](https://imgur.com/fE1KLrj.png)
 
 
 ### Config[Firmware/arduino]

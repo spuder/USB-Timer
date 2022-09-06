@@ -1,7 +1,6 @@
 
 substitutions:
   name: "usb-timer1"
-  timezone: "autodiscover" #TODO: implement this substitution
 
 esphome:
   name: "${name}"
@@ -14,6 +13,9 @@ logger:
 api:
 
 ota:
+
+esp8266:
+  board: d1_mini
 
 packages:
   usb-timer: github://spuder/USB-Timer/Firmware/esphome/packages/hardware.yaml
