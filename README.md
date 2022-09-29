@@ -12,6 +12,9 @@ Control 4 USB ports with a microcontroller
 
 Buy your own:   
 <a href="https://www.tindie.com/stores/spuder/?ref=offsite_badges&utm_source=sellers_spuder&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+
+![](https://youtu.be/k9H2gvHrkr8)
+
 ## Hardware
 
 USB-Timer is based on a Wemos D1 Mini. It uses 4 N Channel Mosfets to control multiple USB ports
