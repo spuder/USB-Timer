@@ -107,13 +107,24 @@ Once the board is built, see the [Firmware/arduino/blink/README.md](Firmware/ard
 
 Configuration can be done in one of several ways
 
-1. ESPHome / ESPHome + Home Assistant (recomended)
-2. Arudino programming (advanced)
-3. Mobile app (advanced/ work in progress)
+1. web.esphome.com (recomended for most users)
+2. ESPHome / ESPHome + Home Assistant 
+3. Arudino programming (advanced)
 
 ![](https://imgur.com/lSZCWdr.png)
 
 ### Config[ESPHome]
+
+### Web.esphome.com
+
+The easiest way to get up and running is by plugging the USB-Timer into your computer, then navigating to [https://web.esphome.io/](https://web.esphome.io/)
+
+Then upload the `firmware.bin` available from the releases page. 
+
+Once the device reboots, you should find a new wireless network named 'USB-Timer Fallback Network'.
+
+Password => `12345678`
+
 
 #### Home Assistant
 
@@ -161,7 +172,7 @@ firmware.bin
 firmware.elf
 ```
 
-Use a tool like [esphome/esphome-flasher](https://github.com/esphome/esphome-flasher) to upload the .bin to the wemos d1 mini
+Use a tool like [https://web.esphome.io/](https://web.esphome.io/) or [esphome/esphome-flasher](https://github.com/esphome/esphome-flasher) to upload the .bin to the wemos d1 mini
 
 If you didn't specify a wireless network, the wemos will boot up into AP mode. Join the network named 'USB-Timer Fallback Hotspot' with password `12345678`. 
 
@@ -173,7 +184,7 @@ A captive portal will popup which will allow you to reconfigure the device to yo
 ### Config[Firmware/arduino]
 
 
-Code examples located in the arduino folder
+Code examples located in the arduino folder (Advanced users only, esphome is recomended for most users)
 
 - [Firmware/arduino](./Firmware/arduino)  
 - [Firmware/arduino/blink/README.md](arduino/blink/README.md])  
